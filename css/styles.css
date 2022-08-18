@@ -1,0 +1,623 @@
+
+/* Font Ablage */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+
+/* allgemeine Angaben */
+body {
+    font-family: 'Mukta', sans-serif;
+    color: #11324D;
+    scroll-behavior: smooth;
+}
+
+/* -------------- HEADER ---------------------- */
+
+header {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > div.intro-flexbox {
+    width: 100%;
+    height: 30vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.intro-flexbox h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+div.intro-flexbox h2 {
+    font-weight: 500;
+}
+
+div.intro-flexbox nav ul {
+    position: fixed;
+    top: 5em;
+    right: 0;
+}
+
+div.intro-flexbox nav ul li {
+    font-size: larger;
+    padding: 0.5em;
+}
+
+/* Links und Listen */
+/* List-items verändern */
+ul li::marker {
+    content: '/';
+    color: #11324D;
+}
+
+a {
+    text-decoration: none;
+    color: #11324D;
+    padding: 0 .25rem;
+}
+
+a:hover {
+    text-decoration: overline;
+}
+
+/* ---------------------------------------- */
+
+
+/* Quote Part */
+section.grid-quote-part {
+    width: 30%;
+    height: 50%;
+    margin-bottom: 10em;
+    border: 4px solid #C1CFC0;
+    display: grid;
+
+    background-color: #E7E0C9;
+    background-position: center;
+    padding: 1em;
+    transform: rotate(-45deg);
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+section.grid-quote-part div {
+    width: 100%;
+    height: 100%;
+}
+
+/* words */
+.grid-quote-part div#word-1 { 
+    grid-column: 1 / span 4;
+    grid-row: 1;
+
+    text-transform: uppercase;
+    font-size: 4em;
+    align-self: end;
+}
+
+.grid-quote-part div#word-2-3 {
+    grid-column: 3 / span 4;
+    grid-row: 2;
+
+    font-size: 1.5em;
+}
+
+.grid-quote-part div#word-4-5 {
+    grid-column: 3 / span 5;
+    grid-row: 3;
+    font-size: 2em;
+
+}
+
+.grid-quote-part div#word-6 {
+    grid-column: 3;
+    grid-row: 4;
+    font-size: 2em;
+}
+
+.grid-quote-part div#word-7 {
+    font-size: 4em;
+    grid-column: 3;
+    grid-row: 5 / span 7;
+    writing-mode: vertical-lr;
+}
+
+.grid-quote-part div#word-8 {
+    grid-column: 2;
+    grid-row: 5 / span 7;
+    writing-mode: vertical-lr;
+    font-size: 4em;
+}
+
+.grid-quote-part div#word-9 {
+    grid-column: 5;
+    grid-row: 6;
+    font-size: 1.5em;
+}
+
+.grid-quote-part div#word-10 {
+    grid-column: 6;
+    grid-row: 6;
+    font-size: 1.5em;
+}
+
+.grid-quote-part div#word-11 {
+    grid-column: 5 / span 6;
+    grid-row: 7;
+    font-size: 1.5em;
+}
+
+.grid-quote-part div#word-12-13-14 {
+    grid-column: 4 / span 6;
+    grid-row: 8;
+    text-align: center;
+}
+
+.grid-quote-part div#word-15 {
+    grid-column: 6;
+    grid-row: 9;
+    text-align: end;
+    text-transform: uppercase;
+}
+
+/* cite */
+.grid-quote-part div#cite {
+    grid-column: 6;
+    grid-row: 1 / span 5;
+    writing-mode: vertical-lr;
+    font-size: 1em;
+    text-align: center;
+
+}
+
+/* bars */
+    .grid-quote-part div.bar-1 {
+    min-width: 3em;
+    width: 100%;
+    height: 100%;
+    background-color: #6B7AA1;
+
+    grid-column: 1;
+    grid-row: 2 / span 8;
+}
+
+.grid-quote-part div.bar-2 {
+    width: 100%;
+    height: 0.5em;
+    background-color: #6B7AA1;
+
+    grid-column: 4 / span 6;
+    grid-row: 10;
+}
+
+.grid-quote-part div#slash {
+    grid-column: 5;
+    grid-row: 1;
+    font-size: 5em;
+}
+
+/* Animation Quote-Part */
+
+section.grid-quote-part {
+    animation: 3s ease-in-out 1s 3 alternate forwards quote-rotation;
+}
+
+@keyframes quote-rotation {
+    from {
+        transform: rotate(-45deg);
+    }
+
+    over {
+        transform: rotate(-30deg);
+    }
+    
+    and {
+        transform: rotate(-15deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* --------------- MAIN ------------------- */
+
+section.fully-viewport {
+    width: 100%;
+    height: 100vh;
+}
+
+/* ------------------ About-Section --------------------- */
+
+section#about-section {
+    background-color: #E7E0C9;
+}
+
+section div.first-part {
+    background-color: #11324D;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* border: 2px solid black; */
+}
+
+section div.first-part > h1, section div.first-part > h2 {
+    color: white;
+    letter-spacing: 0.1em;
+    margin-left: 3em;
+}
+
+section#about-section div#about-grid-system {
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 70%;
+    height: 80%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr) 0.5fr;
+    grid-template-rows: repeat(2, 1fr) 0.2fr;
+    gap: 1em;
+
+    /* border-bottom: 4px solid #C1CFC0; */
+
+    font-size: larger;
+    text-align: left;
+}
+
+section#about-section div#img-portrait {
+    grid-column: 1 / span 3;
+    grid-row: 1;    
+
+    background-image: url(../img/portfolio-portrait-1000-300.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+div#about-grid-system ul li {
+    padding: 0.5em;
+}
+
+div#about-grid-system div#about-intro ul li::marker {
+    content: "";
+}
+
+div#about-grid-system div#about-soft-skills {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    border-right: 4px solid #C1CFC0;
+}
+
+div#about-grid-system div#about-design-skills {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+
+div#about-grid-system div#about-design-skills ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div#about-grid-system h4 {
+    letter-spacing: 0.1em;
+}
+
+div#about-hard-skills ul li::marker, div#about-soft-skills ul li::marker {
+    content: "";
+}
+
+div#about-grid-system div#about-intro, div#about-grid-system div#about-hard-skills {
+    border-left: 4px solid #C1CFC0;
+}
+
+
+/* --------------- Projects-Section ------------------------- */
+
+section#projects-section {
+    background-color: #C1CFC0;
+}
+
+section#projects-section div#projects-grid-system {
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 5em;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.2fr 1fr 0.5fr 0.2fr 1fr;
+    gap: 0.5em;
+}
+
+div#projects-grid-system div.bar-3 {
+    background-color: #6B7AA1;
+}
+
+/* Projects-Grid-System */
+
+div#projects-grid-system div#magazin-project {
+    grid-column: 1;
+    grid-row: 1;
+
+    /* Screenshots der Projekte und entsprechend skaliert */
+    background-image: url(../img/magazin-landing-600.png);
+}
+
+div#projects-grid-system div#portfolio-project {
+    grid-column: 3;
+    grid-row: 1;
+
+    background-image: url(../img/portfolio-600.png);
+}
+
+div#projects-grid-system div#design-project {
+    grid-column: 1;
+    grid-row: 3;
+
+    background-image: url(../img/design-studio-600.png);
+}
+
+div#projects-grid-system div#hardcode-project {
+    grid-column: 2;
+    grid-row: 3;
+
+    background-image: url(../img/hardcode-homepage-600.png);
+}
+
+div#projects-grid-system div#keyframing-mario-project {
+    grid-column: 3;
+    grid-row: 3;
+
+    background-image: url(../img/keyframing-mario-600.png);
+}
+
+div#projects-grid-system div#generator-project {
+    grid-column: 1;
+    grid-row: 6;
+
+    background-image: url(../img/number-generator-600.png);
+}
+
+div#projects-grid-system div#github-icon {
+    grid-column: 3;
+    grid-row: 6;
+    font-size: 38pt;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#projects-grid-system div.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: opacity(0.5);
+}
+
+/* bars */
+div#projects-grid-system div#bar-row-two {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+div#projects-grid-system div#bar-row-five {
+    grid-column: 1 / span 3;
+    grid-row: 5;
+}
+
+div#projects-grid-system div#navy-box {
+    grid-column: 2;
+    grid-row: 6;
+    background-color: #11324D;
+}
+
+/* Text-Boxes */
+div.text-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div#top-text-box > h4.angle-left::before, div#navy-box > h4.angle-left::before {
+    font-family: 'FontAwesome';
+    content: "\f104";
+    margin-right: 1em;
+}
+
+div#top-text-box > h4#angle-right::after {
+    font-family: 'FontAwesome';
+    content: "\f105";
+    margin-left: 1em;
+}
+
+div#middle-text-box, div#right-text-box {
+    background-color: #E7E0C9;
+}
+
+div#navy-box {
+    color: #C1CFC0;
+}
+
+/* Hover-Effekte */
+div#projects-grid-system div.filter-effect:hover {
+    filter: opacity(1);
+}
+
+div#projects-grid-system div#github-icon i:hover {
+    color: #6B7AA1;
+}
+
+/* ------------------- Contact-Section ------------------------ */
+
+section#contact-section {
+    width: 100%;
+    height: 95vh;
+    background-color: #6B7AA1;
+}
+
+section#contact-section div#contact-flexbox {
+    width: 70%;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: 7em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#contact-flexbox div#contact-info {
+    width: 70%;
+    height: 15%;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.25fr);
+    gap: 1em;
+
+    border-left: 2px solid #C1CFC0;
+    padding-left: 1em;
+}
+
+div#contact-info > h4 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+section#contact-section form#contact-form {
+    width: 70%;
+    height: 70%;
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.25fr repeat(2, 0.5fr) 0.25fr;
+    gap: 1em;
+
+    border-right: 2px solid #C1CFC0;
+    border-bottom: 2px solid #C1CFC0;
+    padding-right: 1em;
+}
+
+form#contact-form > h2 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+form#contact-form fieldset#name-fieldset {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+form#contact-form fieldset#email-fieldset {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+form#contact-form fieldset#message-fieldset {
+    grid-column: 2;
+    grid-row: 2 / span 3;
+}
+
+form#contact-form fieldset#agree-fieldset {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+form#contact-form button {
+    grid-column: 2;
+    grid-row: 4;
+
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    background-color: #E7E0C9;
+    border: none;
+
+}
+
+/* Anordnung im Fieldset */
+form#contact-form fieldset {
+    display: flex;
+    flex-direction: column;
+
+    border: none;
+}
+
+form#contact-form fieldset input {
+    height: 2em;
+}
+
+form#contact-form fieldset input, textarea {
+    outline-color: #C1CFC0;
+}
+
+
+/* message Textfeldgröße nicht veränderbar */
+form#contact-form fieldset textarea {
+    resize: none;
+}
+
+/* agree-fieldset Flex-Richtung ändern */
+form#contact-form fieldset#agree-fieldset {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Abstand zwischen Label und Checkox */
+form#contact-form fieldset#agree-fieldset label {
+    margin-left: 1em;
+}
+
+/* ---------------------- Footer --------------------------------- */
+
+footer {
+    width: 100%;
+    height: 5vh;
+    background-color: #6B7AA1;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer  ul  li::marker {
+    content: "";
+}
+
+footer  ul  li > ul {
+    display: flex;
+}
+
+footer ul li > ul li {
+    margin-left: 1em;
+}
+
+footer ul li a i {
+    font-size: 24pt;
+}
+
+footer ul li a i:hover {
+    color: #C1CFC0;
+}

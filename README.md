@@ -17,13 +17,13 @@ Das sind Fragen, die mich immer wieder zum Nachdenken bringen, je nach Lebenssit
 1. Struktur mit klarer Linie - 'roter Faden'
 2. Simplizität/ Einfachheit/ Minimalismus
 3. Funktionalität/ praktikabler Sinn/ Handwerk
-4. Sinnlichkeit
+4. Sinnlichkeit/ Bodenständigkeit
 
 # Wireframes
 
 # Color System
 
-![Eine Pastell-Beige-Blau-Farbpalette](../uib-final-project-portfolio/img/Color%20Hunt%20Palette%20e7e0c9c1cfc06b7aa111324d.png)
+![Eine Pastell-Beige-Blaue Farbpalette](../uib-final-project-portfolio/img/Color%20Hunt%20Palette%20e7e0c9c1cfc06b7aa111324d.png "Eine Pastell-Beige-Blaue Farbpalette")
 
 von oben nach unten:
 + #E7E0C9 - Beige - Hintergrund für Quote-Part und About-Section

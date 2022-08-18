@@ -1,0 +1,251 @@
+
+/* smaller Desktops */
+
+@media screen and (max-width: 1319px) {
+    /* intro */
+    .grid-quote-part div#cite {
+        text-align: left;
+    }
+
+    .grid-quote-part div#word-10 {
+        margin-left: 0.2em;
+    }
+
+    .grid-quote-part {
+        margin-left: 1em;
+    }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+
+    /* intro */
+    header {
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    header > div.intro-flexbox {
+        height: 20vh;
+        display: flexbox;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin-left: 1em;
+    }
+
+    div.intro-flexbox nav ul {
+        position: fixed;
+        top: 11em;
+        left: 2em;
+
+        padding: auto o;
+        display: flex;
+    }
+
+
+    /* about */
+    section#about-section div#about-grid-system {
+        width: 73%;
+        height: 75%;
+        margin-top: 5em;
+        margin-left: 0;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    div#about-grid-system div#about-intro {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    div#about-grid-system div#about-hard-skills {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    div#about-grid-system div#about-soft-skills {
+        grid-column: 1;
+        grid-row: 3;
+
+        align-items: flex-start;
+
+        border: none;
+        border-left: 4px solid #C1CFC0;
+    }
+
+    div#about-grid-system div#about-design-skills {
+        grid-column: 2;
+        grid-row: 3;
+        
+        border-left: 4px solid #C1CFC0;
+    }
+
+    div#about-grid-system div#about-design-skills ul {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        margin-left: 1em;
+    }
+
+    /* projects */
+    section#projects-section div#projects-grid-system {
+        width: 100%;
+        height: 80vh;
+        margin-left: 0;
+        margin-top: 5em;
+    
+        display: grid;
+    
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:repeat(2, 1fr) 0.2fr 1fr 0.5fr 1fr 0.2fr;
+        gap: 0.5em;
+    }
+
+    div#projects-grid-system div#magazin-project {
+
+        /* Screenshots der Projekte und entsprechend skaliert */
+        background-image: url(../img/magazin-landing-300.png);
+    }
+
+    div#projects-grid-system div#portfolio-project {
+        grid-column: 2;
+        grid-row: 2;
+    
+        background-image: url(../img/portfolio-300.png);
+    }
+    
+    div#projects-grid-system div#design-project {
+        grid-column: 1;
+        grid-row: 2;
+    
+        background-image: url(../img/design-studio-300.png);
+    }
+
+    div#projects-grid-system div#left-text-box {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    div#projects-grid-system div#hardcode-project {
+        grid-column: 1;
+        grid-row: 4;
+    
+        background-image: url(../img/hardcode-homepage-300.png);
+    }
+
+    div#projects-grid-system div#middle-text-box {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    div#projects-grid-system div#keyframing-mario-project {
+        grid-column: 2;
+        grid-row: 4;
+    
+        background-image: url(../img/keyframing-mario-600.png);
+    }
+
+    div#projects-grid-system div#right-text-box {
+        grid-column: 2;
+        grid-row: 5;
+    }
+    
+    div#projects-grid-system div#generator-project {
+        grid-column: 1;
+        grid-row: 6;
+    
+        background-image: url(../img/number-generator-600.png);
+    }
+    
+    div#projects-grid-system div#github-icon {
+        grid-column: 1 / span 2;
+        grid-row: 7;
+        font-size: 26pt;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div#projects-grid-system div#bar-row-two {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    div#projects-grid-system div#bar-row-five {
+        display: none;
+    }
+    
+    div#top-text-box > h4#angle-right::after {
+        font-family: 'FontAwesome';
+        content: "\f107";
+        margin-left: 1em;
+    }
+
+    /* contact */
+
+    section#contact-section {
+        height: 80vh;
+    }
+    section#contact-section div#contact-flexbox {
+        height: 60vh;
+        margin: 5em 0;
+    }
+
+    div#contact-flexbox div#contact-info {
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#contact-section form#contact-form {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* footer */
+
+    footer {
+        height: 15vh;
+    }
+
+    footer ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* Smartphone */
+
+@media screen and (max-width: 468px) {
+    /* intro */
+    header {
+        justify-content: flex-start;
+    }
+
+    div.intro-flexbox nav ul {
+        top: 7em;
+        left: 2em;
+    }
+
+    .grid-quote-part {
+        margin-top: 5em;
+    }
+
+    /* about */
+    section div.first-part > h1, section div.first-part > h2 {
+        margin-left: 1em;
+    }
+
+    section#about-section div#img-portrait {
+        height: 20vh;
+        margin: 0 auto;
+    }
+}
