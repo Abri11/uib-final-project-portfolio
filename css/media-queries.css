@@ -3,16 +3,38 @@
 
 @media screen and (max-width: 1319px) {
     /* intro */
-    .grid-quote-part div#cite {
-        text-align: left;
+    section.grid-quote-part {
+        width: 50%;
+}
+
+@media screen and (max-width: 927px) {
+    /* contact */
+
+    section#contact-section {
+        height: 80vh;
+    }
+    section#contact-section div#contact-flexbox {
+        height: 60vh;
+        margin: 0 auto;
+        margin-top: 5em;
     }
 
-    .grid-quote-part div#word-10 {
-        margin-left: 0.2em;
+    div#contact-flexbox div#contact-info {
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
     }
 
-    .grid-quote-part {
-        margin-left: 1em;
+    section#contact-section form#contact-form {
+        width: 80%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form#contact-form button {
+        margin-bottom: 0.5em;
     }
 }
 
@@ -40,9 +62,13 @@
         position: fixed;
         top: 11em;
         left: 2em;
+        z-index: 999;
 
-        padding: auto o;
         display: flex;
+    }
+
+    section.grid-quote-part {
+        width: 80%;
     }
 
 
@@ -50,8 +76,9 @@
     section#about-section div#about-grid-system {
         width: 73%;
         height: 75%;
+        margin: 0 auto;
         margin-top: 5em;
-        margin-left: 0;
+        
 
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -93,9 +120,9 @@
 
     /* projects */
     section#projects-section div#projects-grid-system {
-        width: 100%;
+        width: 95%;
         height: 80vh;
-        margin-left: 0;
+        margin: 0 auto;
         margin-top: 5em;
     
         display: grid;
@@ -146,7 +173,7 @@
         grid-column: 2;
         grid-row: 4;
     
-        background-image: url(../img/keyframing-mario-600.png);
+        background-image: url(../img/keyframing-mario-300.png);
     }
 
     div#projects-grid-system div#right-text-box {
@@ -158,7 +185,7 @@
         grid-column: 1;
         grid-row: 6;
     
-        background-image: url(../img/number-generator-600.png);
+        background-image: url(../img/number-generator-300.png);
     }
     
     div#projects-grid-system div#github-icon {
@@ -192,8 +219,10 @@
         height: 80vh;
     }
     section#contact-section div#contact-flexbox {
+        width: 80%;
         height: 60vh;
-        margin: 5em 0;
+        margin: 0 auto;
+        margin-top: 5em;
     }
 
     div#contact-flexbox div#contact-info {
@@ -235,8 +264,10 @@
         left: 2em;
     }
 
-    .grid-quote-part {
+    section.grid-quote-part {
+        margin: 0 auto;
         margin-top: 5em;
+        width: 95%;
     }
 
     /* about */
@@ -247,5 +278,79 @@
     section#about-section div#img-portrait {
         height: 20vh;
         margin: 0 auto;
+    }
+
+    /* projects */
+    section#projects-section div#projects-grid-system {
+        height: 85vh;
+        display: grid;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        gap: 0.5em;
+    }
+
+    div#projects-grid-system div#magazin-project {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    div#projects-grid-system div#portfolio-project {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    div#projects-grid-system div#design-project {
+        display: none;
+    }
+
+    div#projects-grid-system div#left-text-box {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    div#projects-grid-system div#hardcode-project {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    div#projects-grid-system div#middle-text-box {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    div#projects-grid-system div#keyframing-mario-project {
+        grid-column: 1;
+        grid-row: 6;
+    
+    }
+
+    div#projects-grid-system div#right-text-box {
+        grid-column: 1;
+        grid-row: 7;
+    }
+    
+    div#projects-grid-system div#generator-project {
+        display: none;
+    }
+    
+    div#projects-grid-system div#github-icon {
+        grid-column: 1;
+        grid-row: 8;
+    }
+
+    div#projects-grid-system div#top-text-box {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    div#projects-grid-system div#navy-box {
+        display: none;
+    }
+    
+    div#top-text-box > h4.angle-left::before {
+        font-family: 'FontAwesome';
+        content: "\f106";
+        margin-left: 1em;
     }
 }
