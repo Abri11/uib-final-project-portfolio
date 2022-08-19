@@ -2,14 +2,14 @@
 /* smaller Desktops */
 
 @media screen and (max-width: 1319px) {
-    /* intro */
+    /* header-intro */
     section.grid-quote-part {
         width: 50%;
     }
 }
 
 @media screen and (max-width: 927px) {
-    /* contact */
+    /* contact-section */
 
     section#contact-section {
         height: 80vh;
@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 768px) {
 
-    /* intro */
+    /* header-intro */
     header {
         justify-content: space-around;
         align-items: flex-start;
@@ -73,14 +73,14 @@
     }
 
 
-    /* about */
+    /* about-section */
     section#about-section div#about-grid-system {
         width: 73%;
         height: 75%;
         margin: 0 auto;
         margin-top: 5em;
         
-
+        /* zweispaltiges grid */
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
@@ -124,7 +124,7 @@
         margin-left: 1em;
     }
 
-    /* projects */
+    /* projects-section */
     section#projects-section div#projects-grid-system {
         width: 95%;
         height: 80vh;
@@ -133,6 +133,7 @@
     
         display: grid;
     
+        /* zweispaltiges-grid */
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows:repeat(2, 1fr) 0.2fr 1fr 0.5fr 1fr 0.2fr;
         gap: 0.5em;
@@ -219,8 +220,7 @@
         margin-left: 1em;
     }
 
-    /* contact */
-
+    /* contact-section */
     section#contact-section {
         height: 80vh;
     }
@@ -260,7 +260,7 @@
 /* Smartphone */
 
 @media screen and (max-width: 468px) {
-    /* intro */
+    /* header-intro */
     header {
         justify-content: flex-start;
     }
@@ -286,7 +286,7 @@
         margin-left: 1em;
     }
 
-    /* about */
+    /* about-section */
     section#about-section {
         height: 200vh;
     }
@@ -299,7 +299,7 @@
         margin-left: 1em;
     }
 
-    /* projects */
+    /* projects-section */
     section#projects-section {
         height: 200vh;
     }
@@ -308,6 +308,7 @@
         height: 178vh;
         display: grid;
 
+        /* einspaltiges grid */
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 1fr);
         gap: 0.5em;
@@ -382,7 +383,7 @@
         margin-left: 1em;
     }
 
-    /* contact */
+    /* contact-section */
     section#contact-section {
         height: 140vh;
     }

@@ -21,6 +21,7 @@ header {
     justify-content: space-around;
     align-items: center;
 }
+/* ---------------------------------- */
 
 header > div.intro-flexbox {
     width: 100%;
@@ -52,7 +53,7 @@ div.intro-flexbox nav ul li {
 }
 
 /* Links und Listen */
-/* List-items verändern */
+/* List-items verändert */
 ul li::marker {
     content: '/';
     color: #11324D;
@@ -204,7 +205,7 @@ section.grid-quote-part div {
     font-size: 5em;
 }
 
-/* Animation Quote-Part */
+/* Quote-Part Animation */
 
 section.grid-quote-part {
     animation: 3s ease-in-out 1s 3 alternate forwards quote-rotation;
@@ -247,8 +248,6 @@ section div.first-part {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-    /* border: 2px solid black; */
 }
 
 section div.first-part > h1, section div.first-part > h2 {
@@ -257,6 +256,7 @@ section div.first-part > h1, section div.first-part > h2 {
     margin-left: 3em;
 }
 
+/* about-grid-system */
 section#about-section div#about-grid-system {
     margin: 0 auto;
     margin-top: 3em;
@@ -269,12 +269,11 @@ section#about-section div#about-grid-system {
     grid-template-rows: repeat(2, 1fr) 0.2fr;
     gap: 1em;
 
-    /* border-bottom: 4px solid #C1CFC0; */
-
     font-size: larger;
     text-align: left;
 }
 
+/* portrait image */
 section#about-section div#img-portrait {
     grid-column: 1 / span 3;
     grid-row: 1;    
@@ -291,9 +290,10 @@ div#about-grid-system ul li {
 }
 
 div#about-grid-system div#about-intro ul li::marker {
-    content: "";
+    content: ""; /* keine list marker */
 }
 
+/* skills übersicht */
 div#about-grid-system div#about-soft-skills {
     display: flex;
     flex-direction: column;
@@ -333,6 +333,7 @@ section#projects-section {
     background-color: #C1CFC0;
 }
 
+/* Projects-Grid-System */
 section#projects-section div#projects-grid-system {
     width: 80%;
     height: 80vh;
@@ -349,8 +350,6 @@ section#projects-section div#projects-grid-system {
 div#projects-grid-system div.bar-3 {
     background-color: #6B7AA1;
 }
-
-/* Projects-Grid-System */
 
 div#projects-grid-system div#magazin-project {
     grid-column: 1;
@@ -437,6 +436,7 @@ div.text-flexbox {
     align-items: center;
 }
 
+/* Pfeil-Icons für Projektzuweisung */
 div#top-text-box > h4.angle-left::before, div#navy-box > h4.angle-left::before {
     font-family: 'FontAwesome';
     content: "\f104";
