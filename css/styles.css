@@ -15,6 +15,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
+    background-color: white;
 
     display: flex;
     flex-direction: column;
@@ -74,19 +75,19 @@ a:hover {
 
 /* Quote Part */
 section.grid-quote-part {
-    width: 30%;
-    height: 50%;
+    width: 30vw;
+    height: 50vh;
+    margin: 0 auto;
     margin-bottom: 10em;
-    border: 4px solid #C1CFC0;
-    display: grid;
 
     background-color: #E7E0C9;
-    background-position: center;
-    padding: 1em;
-    transform: rotate(-45deg);
+    padding: 0.5em;
 
+    display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 1fr);
+
+    transform: rotate(-45deg);
 }
 
 section.grid-quote-part div {
@@ -301,7 +302,7 @@ div#about-grid-system div#about-soft-skills {
     justify-content: flex-start;
     align-items: flex-end;
 
-    border-right: 4px solid #C1CFC0;
+    border-right: 2px solid #11324D;
 }
 
 div#about-grid-system div#about-design-skills {
@@ -323,7 +324,7 @@ div#about-hard-skills ul li::marker, div#about-soft-skills ul li::marker {
 }
 
 div#about-grid-system div#about-intro, div#about-grid-system div#about-hard-skills {
-    border-left: 4px solid #C1CFC0;
+    border-left: 2px solid #11324D;
 }
 
 
@@ -343,7 +344,7 @@ section#projects-section div#projects-grid-system {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 0.2fr 1fr 0.5fr 0.2fr 1fr;
+    grid-template-rows: 1fr 0.1fr 1fr 0.5fr 0.1fr 1fr;
     gap: 0.5em;
 }
 
@@ -425,7 +426,6 @@ div#projects-grid-system div#bar-row-five {
 div#projects-grid-system div#navy-box {
     grid-column: 2;
     grid-row: 6;
-    background-color: #11324D;
 }
 
 /* Text-Boxes */
@@ -449,14 +449,6 @@ div#top-text-box > h4#angle-right::after {
     margin-left: 1em;
 }
 
-div#middle-text-box, div#right-text-box {
-    background-color: #E7E0C9;
-}
-
-div#navy-box {
-    color: #C1CFC0;
-}
-
 /* Hover-Effekte */
 div#projects-grid-system div.filter-effect:hover {
     filter: opacity(1);
@@ -475,20 +467,22 @@ section#contact-section {
 }
 
 section#contact-section div#contact-flexbox {
-    width: 70%;
-    height: 50vh;
+    width: 55%;
+    height: 60vh;
     margin: 0 auto;
-    margin-top: 10em;
+    margin-top: 7em;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+   /*  border: 2px solid black; */
 }
 
 div#contact-flexbox div#contact-info {
-    width: 70%;
-    height: 15%;
+    width: 100%;
+    height: 10vh;
     
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -505,8 +499,9 @@ div#contact-info > h4 {
 }
 
 section#contact-section form#contact-form {
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 45vh;
+
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
@@ -514,7 +509,6 @@ section#contact-section form#contact-form {
     gap: 1em;
 
     border-right: 2px solid #C1CFC0;
-    border-bottom: 2px solid #C1CFC0;
     padding-right: 1em;
 }
 
@@ -581,7 +575,7 @@ form#contact-form fieldset textarea {
 form#contact-form fieldset#agree-fieldset {
     flex-direction: row-reverse;
     justify-content: flex-end;
-    align-items: center;
+    align-content: baseline;
 }
 
 /* Abstand zwischen Label und Checkox */

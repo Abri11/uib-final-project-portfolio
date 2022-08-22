@@ -1,400 +1,472 @@
+        /* smaller desktop */
+    @media screen and (max-width: 1300px) {
 
-/* smaller Desktops */
+        /* Quote Part */
+        section.grid-quote-part {
+            width: 40vw;
+            height: 60vh;
+            margin-bottom: 5em;
+        }
 
-@media screen and (max-width: 1319px) {
-    /* header-intro */
-    section.grid-quote-part {
-        width: 50%;
-    }
-}
+        /* projects-section */
+        section#projects-section div#projects-grid-system {
+            margin-top: 3em;
+        }
 
-@media screen and (max-width: 927px) {
-    /* contact-section */
+        /* contact-section */
+        section#contact-section div#contact-flexbox {
+            height: 65vh;
+            width: 75%;
+        }
 
-    section#contact-section {
-        height: 80vh;
-    }
-    section#contact-section div#contact-flexbox {
-        height: 60vh;
-        margin: 0 auto;
-        margin-top: 5em;
-    }
-
-    div#contact-flexbox div#contact-info {
-        width: 100%;
-        height: 15vh;
-        display: flex;
-        flex-direction: column;
+        section#contact-section form#contact-form {
+            height: 50vh;
+        }
     }
 
-    section#contact-section form#contact-form {
-        width: 80%;
-        height: 70%;
-        display: flex;
-        flex-direction: column;
+    @media screen and (max-width: 927px) {
+        /* contact-section */
+
+        section#contact-section div#contact-flexbox {
+            height: 70vh;
+            margin-top: 5em;
+        }
+
+        div#contact-flexbox div#contact-info {
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        section#contact-section form#contact-form {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form#contact-form button {
+            width: 25%;
+            height: 7%;
+            margin: 0 auto;
+        }
     }
 
-    form#contact-form button {
-        margin-bottom: 0.5em;
-    }
-}
+    /* Tablet */
 
-/* Tablet */
+    @media screen and (max-width: 768px) {
 
-@media screen and (max-width: 768px) {
+        /* header-intro */
+        header {
+            justify-content: space-around;
+            align-items: flex-start;
+        }
 
-    /* header-intro */
-    header {
-        justify-content: space-around;
-        align-items: flex-start;
-    }
+        header>div.intro-flexbox {
+            height: 20vh;
+            display: flexbox;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
 
-    header > div.intro-flexbox {
-        height: 20vh;
-        display: flexbox;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+            margin-left: 1em;
+        }
 
-        margin-left: 1em;
-    }
+        div.intro-flexbox nav ul {
+            position: fixed;
+            top: 12em;
+            left: 2em;
+            z-index: 999;
 
-    div.intro-flexbox nav ul {
-        position: fixed;
-        top: 11em;
-        left: 2em;
-        z-index: 999;
+            display: flex;
+        }
 
-        display: flex;
-    }
-
-    section.grid-quote-part {
-        width: 80%;
-    }
+        section.grid-quote-part {
+            width: 80vw;
+            height: 50vh;
+            margin: 0 auto;
+            margin-bottom: 10em;
+        }
 
 
-    /* about-section */
-    section#about-section div#about-grid-system {
-        width: 73%;
-        height: 75%;
-        margin: 0 auto;
-        margin-top: 5em;
-        
-        /* zweispaltiges grid */
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+
+        /* about-section */
+        section#about-section div#about-grid-system {
+            width: 73%;
+            height: 75%;
+            margin: 0 auto;
+            margin-top: 5em;
+
+            /* zweispaltiges grid */
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        section#about-section div#img-portrait {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+
+        div#about-grid-system div#about-intro {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        div#about-grid-system div#about-hard-skills {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        div#about-grid-system div#about-soft-skills {
+            grid-column: 1;
+            grid-row: 3;
+
+            align-items: flex-start;
+
+            border: none;
+            border-left: 2px solid #11324D;
+        }
+
+        div#about-grid-system div#about-design-skills {
+            grid-column: 2;
+            grid-row: 3;
+
+            border-left: 2px solid #11324D;
+        }
+
+        div#about-grid-system div#about-design-skills ul {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            margin-left: 1em;
+        }
+
+        /* projects-section */
+        section#projects-section div#projects-grid-system {
+            width: 95%;
+            height: 80vh;
+            margin: 0 auto;
+            margin-top: 5em;
+
+            display: grid;
+
+            /* zweispaltiges-grid */
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr) 0.2fr 1fr 0.5fr 1fr 0.2fr;
+            gap: 0.5em;
+        }
+
+        div#projects-grid-system div#magazin-project {
+
+            /* Screenshots der Projekte und entsprechend skaliert */
+            background-image: url(../img/magazin-landing-300.png);
+        }
+
+        div#projects-grid-system div#portfolio-project {
+            grid-column: 2;
+            grid-row: 2;
+
+            background-image: url(../img/portfolio-300.png);
+        }
+
+        div#projects-grid-system div#design-project {
+            grid-column: 1;
+            grid-row: 2;
+
+            background-image: url(../img/design-studio-300.png);
+        }
+
+        div#projects-grid-system div#left-text-box {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        div#projects-grid-system div#hardcode-project {
+            grid-column: 1;
+            grid-row: 4;
+
+            background-image: url(../img/hardcode-homepage-300.png);
+        }
+
+        div#projects-grid-system div#middle-text-box {
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+        div#projects-grid-system div#keyframing-mario-project {
+            grid-column: 2;
+            grid-row: 4;
+
+            background-image: url(../img/keyframing-mario-300.png);
+        }
+
+        div#projects-grid-system div#right-text-box {
+            grid-column: 2;
+            grid-row: 5;
+        }
+
+        div#projects-grid-system div#generator-project {
+            grid-column: 1;
+            grid-row: 6;
+
+            background-image: url(../img/number-generator-300.png);
+        }
+
+        div#projects-grid-system div#github-icon {
+            grid-column: 1 / span 2;
+            grid-row: 7;
+            font-size: 26pt;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#projects-grid-system div#bar-row-two {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        div#projects-grid-system div#bar-row-five {
+            display: none;
+        }
+
+        div#top-text-box>h4#angle-right::after {
+            font-family: 'FontAwesome';
+            content: "\f107";
+            margin-left: 1em;
+        }
+
+        /* contact-section */
+        section#contact-section div#contact-flexbox {
+            height: 75vh;
+            width: 80%;
+        }
+
+        div#contact-flexbox div#contact-info {
+            height: 12vh;
+        }
+
+        section#contact-section form#contact-form {
+            height: 55vh;
+        }
+
+
+        /* footer */
+
+        footer {
+            height: 16vh;
+        }
+
+        footer ul {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer ul li>ul li {
+            margin: 0;
+        }
+
     }
 
-    section#about-section div#img-portrait {
-        grid-column: 1 / span 2;
-        grid-row: 1;
+    /* Smartphone */
+
+    @media screen and (max-width: 468px) {
+
+        /* header-intro */
+        header {
+            justify-content: flex-start;
+        }
+
+        div.intro-flexbox nav ul {
+            top: 7em;
+            left: 1em;
+            flex-wrap: wrap;
+        }
+
+        section.grid-quote-part {
+            margin: 0 auto;
+            margin-top: 2em;
+            width: 95vw;
+            height: 65vh;
+        }
+
+        section.grid-quote-part div#cite {
+            text-align: left;
+        }
+
+        section.grid-quote-part div#word-10 {
+            margin-left: 1em;
+        }
+
+        /* about-section */
+        section#about-section {
+            height: 115vh;
+        }
+
+        div.first-part>h1 {
+            font-size: 32pt;
+        }
+
+        section#about-section div#about-grid-system {
+            height: 60%;
+        }
+
+        section div.first-part>h1,
+        section div.first-part>h2 {
+            margin-left: 1em;
+        }
+
+        /* projects-section */
+        section#projects-section {
+            height: 200vh;
+        }
+
+        section#projects-section div#projects-grid-system {
+            height: 178vh;
+            display: grid;
+
+            /* einspaltiges grid */
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(12, 1fr);
+            gap: 0.5em;
+        }
+
+        div#projects-grid-system div#magazin-project {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        div#projects-grid-system div#portfolio-project {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        div#projects-grid-system div#design-project {
+            grid-column: 1;
+            grid-row: 8;
+        }
+
+        div#projects-grid-system div#left-text-box {
+            grid-column: 1;
+            grid-row: 9;
+        }
+
+        div#projects-grid-system div#hardcode-project {
+            grid-column: 1;
+            grid-row: 4;
+        }
+
+        div#projects-grid-system div#middle-text-box {
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+        div#projects-grid-system div#keyframing-mario-project {
+            grid-column: 1;
+            grid-row: 6;
+
+        }
+
+        div#projects-grid-system div#right-text-box {
+            grid-column: 1;
+            grid-row: 7;
+        }
+
+        div#projects-grid-system div#generator-project {
+            grid-column: 1;
+            grid-row: 10;
+        }
+
+        div#projects-grid-system div#github-icon {
+            grid-column: 1;
+            grid-row: 12;
+        }
+
+        div#projects-grid-system div#top-text-box {
+            grid-column: 1;
+            grid-row: 2;
+
+            justify-content: space-between;
+        }
+
+        div#projects-grid-system div#navy-box {
+            grid-column: 1;
+            grid-row: 11;
+        }
+
+        div#top-text-box>h4.angle-left::before,
+        div#navy-box>h4.angle-left::before {
+            font-family: 'FontAwesome';
+            content: "\f106";
+            margin-left: 1em;
+        }
+
+        /* contact-section */
+        section#contact-section {
+            height: 85vh;
+        }
+
+        section#contact-section div#contact-flexbox {
+            width: 90%;
+            height: 65vh;
+            margin-top: 3em;
+            justify-content: space-between;
+            align-items: center;
+
+            /* border: 2px solid black; */
+        }
+
+        section#contact-section div#contact-flexbox h2,
+        h3,
+        h4 {
+            font-size: large;
+        }
+
+        div#contact-flexbox div#contact-info {
+            height: 15vh;
+            border: none;
+            padding: 0;
+        }
+
+        section#contact-section form#contact-form {
+            height: 50vh;
+            border: none;
+            padding: 0;
+        }
+
+        form#contact-form button {
+            width: 25%;
+            height: 7%;
+            margin: 0 auto;
+        }
+
+        /* footer */
+        footer {
+            height: 15vh;
+            font-size: small;
+        }
     }
 
-    div#about-grid-system div#about-intro {
-        grid-column: 1;
-        grid-row: 2;
-    }
+    /* smaller smartphones */
+    @media screen and (max-width: 414px) {
 
-    div#about-grid-system div#about-hard-skills {
-        grid-column: 2;
-        grid-row: 2;
-    }
+        /* contact-section and footer */
+        section#contact-section {
+            height: 110vh;
+        }
 
-    div#about-grid-system div#about-soft-skills {
-        grid-column: 1;
-        grid-row: 3;
+        section#contact-section div#contact-flexbox {
+            height: 90vh;
+        }
 
-        align-items: flex-start;
+        section#contact-section form#contact-form {
+            height: 70vh;
+        }
 
-        border: none;
-        border-left: 4px solid #C1CFC0;
+        footer {
+            height: 20vh;
+        }
     }
-
-    div#about-grid-system div#about-design-skills {
-        grid-column: 2;
-        grid-row: 3;
-        
-        border-left: 4px solid #C1CFC0;
-    }
-
-    div#about-grid-system div#about-design-skills ul {
-        flex-direction: column;
-        justify-content: flex-start;
-
-        margin-left: 1em;
-    }
-
-    /* projects-section */
-    section#projects-section div#projects-grid-system {
-        width: 95%;
-        height: 80vh;
-        margin: 0 auto;
-        margin-top: 5em;
-    
-        display: grid;
-    
-        /* zweispaltiges-grid */
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows:repeat(2, 1fr) 0.2fr 1fr 0.5fr 1fr 0.2fr;
-        gap: 0.5em;
-    }
-
-    div#projects-grid-system div#magazin-project {
-
-        /* Screenshots der Projekte und entsprechend skaliert */
-        background-image: url(../img/magazin-landing-300.png);
-    }
-
-    div#projects-grid-system div#portfolio-project {
-        grid-column: 2;
-        grid-row: 2;
-    
-        background-image: url(../img/portfolio-300.png);
-    }
-    
-    div#projects-grid-system div#design-project {
-        grid-column: 1;
-        grid-row: 2;
-    
-        background-image: url(../img/design-studio-300.png);
-    }
-
-    div#projects-grid-system div#left-text-box {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    
-    div#projects-grid-system div#hardcode-project {
-        grid-column: 1;
-        grid-row: 4;
-    
-        background-image: url(../img/hardcode-homepage-300.png);
-    }
-
-    div#projects-grid-system div#middle-text-box {
-        grid-column: 1;
-        grid-row: 5;
-    }
-    
-    div#projects-grid-system div#keyframing-mario-project {
-        grid-column: 2;
-        grid-row: 4;
-    
-        background-image: url(../img/keyframing-mario-300.png);
-    }
-
-    div#projects-grid-system div#right-text-box {
-        grid-column: 2;
-        grid-row: 5;
-    }
-    
-    div#projects-grid-system div#generator-project {
-        grid-column: 1;
-        grid-row: 6;
-    
-        background-image: url(../img/number-generator-300.png);
-    }
-    
-    div#projects-grid-system div#github-icon {
-        grid-column: 1 / span 2;
-        grid-row: 7;
-        font-size: 26pt;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    div#projects-grid-system div#bar-row-two {
-        grid-column: 2;
-        grid-row: 3;
-    }
-    
-    div#projects-grid-system div#bar-row-five {
-        display: none;
-    }
-    
-    div#top-text-box > h4#angle-right::after {
-        font-family: 'FontAwesome';
-        content: "\f107";
-        margin-left: 1em;
-    }
-
-    /* contact-section */
-    section#contact-section {
-        height: 80vh;
-    }
-    section#contact-section div#contact-flexbox {
-        width: 80%;
-        height: 60vh;
-        margin: 0 auto;
-        margin-top: 5em;
-    }
-
-    div#contact-flexbox div#contact-info {
-        height: 15vh;
-        display: flex;
-        flex-direction: column;
-    }
-
-    section#contact-section form#contact-form {
-        height: 70%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* footer */
-
-    footer {
-        height: 15vh;
-    }
-
-    footer ul {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-}
-
-/* Smartphone */
-
-@media screen and (max-width: 468px) {
-    /* header-intro */
-    header {
-        justify-content: flex-start;
-    }
-
-    div.intro-flexbox nav ul {
-        top: 7em;
-        left: 1em;
-        flex-wrap: wrap;
-    }
-
-    section.grid-quote-part {
-        margin: 0 auto;
-        margin-top: 2em;
-        width: 95%;
-        height: 72%;
-    }
-
-    section.grid-quote-part div#cite {
-        text-align: left;
-    }
-
-    section.grid-quote-part div#word-10 {
-        margin-left: 1em;
-    }
-
-    /* about-section */
-    section#about-section {
-        height: 200vh;
-    }
-
-    section#about-section div#about-grid-system {
-        height: 60%;
-    }
-
-    section div.first-part > h1, section div.first-part > h2 {
-        margin-left: 1em;
-    }
-
-    /* projects-section */
-    section#projects-section {
-        height: 200vh;
-    }
-
-    section#projects-section div#projects-grid-system {
-        height: 178vh;
-        display: grid;
-
-        /* einspaltiges grid */
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(12, 1fr);
-        gap: 0.5em;
-    }
-
-    div#projects-grid-system div#magazin-project {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    div#projects-grid-system div#portfolio-project {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    
-    div#projects-grid-system div#design-project {
-        grid-column: 1;
-        grid-row: 8;
-    }
-
-    div#projects-grid-system div#left-text-box {
-        grid-column: 1;
-        grid-row: 9;
-    }
-    
-    div#projects-grid-system div#hardcode-project {
-        grid-column: 1;
-        grid-row: 4;
-    }
-
-    div#projects-grid-system div#middle-text-box {
-        grid-column: 1;
-        grid-row: 5;
-    }
-    
-    div#projects-grid-system div#keyframing-mario-project {
-        grid-column: 1;
-        grid-row: 6;
-    
-    }
-
-    div#projects-grid-system div#right-text-box {
-        grid-column: 1;
-        grid-row: 7;
-    }
-    
-    div#projects-grid-system div#generator-project {
-        grid-column: 1;
-        grid-row: 10;
-    }
-    
-    div#projects-grid-system div#github-icon {
-        grid-column: 1;
-        grid-row: 12;
-    }
-
-    div#projects-grid-system div#top-text-box {
-        grid-column: 1;
-        grid-row: 2;
-
-        justify-content: space-between;
-    }
-
-    div#projects-grid-system div#navy-box {
-        grid-column: 1;
-        grid-row: 11;
-    }
-    
-    div#top-text-box > h4.angle-left::before, div#navy-box > h4.angle-left::before {
-        font-family: 'FontAwesome';
-        content: "\f106";
-        margin-left: 1em;
-    }
-
-    /* contact-section */
-    section#contact-section {
-        height: 140vh;
-    }
-
-    section#contact-section div#contact-flexbox {
-        width: 90%;
-        height: 90vh;
-    }
-
-    /* footer */
-    footer {
-        height: 22vh;
-    }
-}
