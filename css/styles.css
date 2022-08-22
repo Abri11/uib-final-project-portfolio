@@ -87,6 +87,7 @@ section.grid-quote-part {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 1fr);
 
+    /* Animation */
     transform: rotate(-45deg);
 }
 
@@ -476,8 +477,6 @@ section#contact-section div#contact-flexbox {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-   /*  border: 2px solid black; */
 }
 
 div#contact-flexbox div#contact-info {

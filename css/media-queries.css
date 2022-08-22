@@ -1,4 +1,5 @@
-        /* smaller desktop */
+      
+      /* smaller desktop */
     @media screen and (max-width: 1300px) {
 
         /* Quote Part */
@@ -88,8 +89,6 @@
             margin: 0 auto;
             margin-bottom: 10em;
         }
-
-
 
         /* about-section */
         section#about-section div#about-grid-system {
@@ -252,9 +251,7 @@
             height: 55vh;
         }
 
-
         /* footer */
-
         footer {
             height: 16vh;
         }
@@ -268,7 +265,6 @@
         footer ul li>ul li {
             margin: 0;
         }
-
     }
 
     /* Smartphone */
@@ -367,7 +363,6 @@
         div#projects-grid-system div#keyframing-mario-project {
             grid-column: 1;
             grid-row: 6;
-
         }
 
         div#projects-grid-system div#right-text-box {
@@ -415,13 +410,9 @@
             margin-top: 3em;
             justify-content: space-between;
             align-items: center;
-
-            /* border: 2px solid black; */
         }
 
-        section#contact-section div#contact-flexbox h2,
-        h3,
-        h4 {
+        section#contact-section div#contact-flexbox h2, h3, h4 {
             font-size: large;
         }
 

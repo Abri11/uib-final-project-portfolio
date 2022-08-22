@@ -24,22 +24,22 @@ Das sind Fragen, die mich immer wieder zum Nachdenken bringen, je nach Lebenssit
 
 # Wireframes
 
-![Wireframe für den Start/ Intro Bereich](../uib-final-project-portfolio/img/IMG_0503.jpg "Wireframe für den Start/ Intro Bereich")
+![Wireframe für den Start/ Intro Bereich](../uib-final-project-portfolio/img/start-wireframe-portfolio.jpg "Wireframe für den Start/ Intro Bereich")
 
 + Startpage komplett als Header 
 + mit Überschriftenbereich / fixed Side-Nav und Zitat-Box
     + Side-Nav: About / Projects / Contact / File
 
-![Wireframe für den About Bereich](../uib-final-project-portfolio/img/IMG_0504.jpg "Wireframe für den About Bereich")
+![Wireframe für den About Bereich](../uib-final-project-portfolio/img/about-wireframe-portfolio.jpg "Wireframe für den About Bereich")
 
 + About-Überschrift  / Side-Nav / Skills-Box
     + Skills-Box: Info zu mir / Hard-Skills / Soft-Skills / Design-Skills
 
-![Wireframe für den Projects Bereich](../uib-final-project-portfolio/img/IMG_0505.jpg "Wireframe für den Projects Bereich")
+![Wireframe für den Projects Bereich](../uib-final-project-portfolio/img/projects-wireframe-portfoli.jpg "Wireframe für den Projects Bereich")
 
 + Projects-Überschrift / Side-Nav / Projects-Box-Galerie
 
-![Wireframe für den Contact Bereich](../uib-final-project-portfolio/img/IMG_0506.jpg "Wireframe für den Contact Bereich")
+![Wireframe für den Contact Bereich](../uib-final-project-portfolio/img/contact-wireframe-portfolio.jpg "Wireframe für den Contact Bereich")
 
 + Contact-Überschrift / Side-Nav / Contact-Info / Contact-Form / Footer
 
@@ -51,7 +51,7 @@ Ich habe mich für Beige- / Blau-Grau- und Grüne Pastellfarben entschieden. Die
 
 von oben nach unten:
 + #E7E0C9 - Beige - Hintergrund für Quote-Part und About-Section
-+ #C1CFC0 - Blau-Grau-Grün - Hintergrund in der Project-Section und Akzent als Rahmen
++ #C1CFC0 - Blau-Grau-Grün - Hintergrund in der Project-Section und Hoverfarbe
 + #6B7AA1 - Blau-Grau - Hintergrund in der Contact-Section und Akzentfarbe im Quote-Part und der Projects-Galerie
 + #6B7AA1 - dunkles Navy - Schriftfarbe und Kopfzeilen Farbe für jede Section
 + zusätzlich #FFFFFF - Weiß - Hintergrund für Intro-Section und Schriftfarbe in den Navy-Kopfzeilen
@@ -70,6 +70,7 @@ Daher wird sie immer in der Entwicklung bleiben und je nachdem auch einen Reboot
 
 ## Was fiel mir schwer?
 
++ Projektmanagement
 + ich bin mir noch unklar was genau ich zeigen möchte auf der Page, unabhängig von meinen eigenen Werten
     + dementsprechend konnte  ich die Page-Bereiche nicht ruhen lassen und schwer einen Abschluss finden
 +  RESPONSIVNESS!
