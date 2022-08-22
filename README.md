@@ -24,28 +24,28 @@ Das sind Fragen, die mich immer wieder zum Nachdenken bringen, je nach Lebenssit
 
 # Wireframes
 
-![Wireframe für den Start/ Intro Bereich](../uib-final-project-portfolio/img/start-wireframe-portfolio.jpg "Wireframe für den Start/ Intro Bereich")
+![Wireframe für den Start/ Intro Bereich](https://github.com/Abri11/uib-final-project-portfolio/blob/main/img/start-wireframe-portfolio.jpg "Wireframe für den Start/ Intro Bereich")
 
 + Startpage komplett als Header 
 + mit Überschriftenbereich / fixed Side-Nav und Zitat-Box
     + Side-Nav: About / Projects / Contact / File
 
-![Wireframe für den About Bereich](../uib-final-project-portfolio/img/about-wireframe-portfolio.jpg "Wireframe für den About Bereich")
+![Wireframe für den About Bereich](https://github.com/Abri11/uib-final-project-portfolio/blob/main/img/about-wireframe-portfolio.jpg "Wireframe für den About Bereich")
 
 + About-Überschrift  / Side-Nav / Skills-Box
     + Skills-Box: Info zu mir / Hard-Skills / Soft-Skills / Design-Skills
 
-![Wireframe für den Projects Bereich](../uib-final-project-portfolio/img/projects-wireframe-portfoli.jpg "Wireframe für den Projects Bereich")
+![Wireframe für den Projects Bereich](https://github.com/Abri11/uib-final-project-portfolio/blob/main/img/projects-wireframe-portfoli.jpg "Wireframe für den Projects Bereich")
 
 + Projects-Überschrift / Side-Nav / Projects-Box-Galerie
 
-![Wireframe für den Contact Bereich](../uib-final-project-portfolio/img/contact-wireframe-portfolio.jpg "Wireframe für den Contact Bereich")
+![Wireframe für den Contact Bereich](https://github.com/Abri11/uib-final-project-portfolio/blob/main/img/contact-wireframe-portfolio.jpg "Wireframe für den Contact Bereich")
 
 + Contact-Überschrift / Side-Nav / Contact-Info / Contact-Form / Footer
 
 # Color System
 
-![Eine Pastell-Beige-Blaue Farbpalette](../uib-final-project-portfolio/img/Color%20Hunt%20Palette%20e7e0c9c1cfc06b7aa111324d.png "Eine Pastell-Beige-Blaue Farbpalette")
+![Eine Pastell-Beige-Blaue Farbpalette](https://github.com/Abri11/uib-final-project-portfolio/blob/main/img/Color%20Hunt%20Palette%20e7e0c9c1cfc06b7aa111324d.png "Eine Pastell-Beige-Blaue Farbpalette")
 
 Ich habe mich für Beige- / Blau-Grau- und Grüne Pastellfarben entschieden. Diese strahlen für mich erdende Ruhe und Wärme aus und bieten Kontrastmöglichkeiten.
 
