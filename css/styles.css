@@ -4,10 +4,13 @@
 
 
 /* allgemeine Angaben */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Mukta', sans-serif;
     color: #11324D;
-    scroll-behavior: smooth;
 }
 
 /* -------------- HEADER ---------------------- */
