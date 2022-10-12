@@ -1,0 +1,157 @@
+/* START PAGE */
+
+/* -------------- HEADER ---------------------- */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/* ---------------------------------- */
+
+header > div.intro-flexbox {
+    width: 100%;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+div.intro-flexbox > div {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+div.intro-flexbox h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 3em;
+}
+
+div.intro-flexbox h2 {
+    font-weight: 500;
+    margin-left: 3em;
+}
+
+div.intro-flexbox > nav > ul {
+    display: flex;
+    margin-left: 8em;
+
+    position: fixed;
+    top: 5em;
+    left: auto;
+}
+
+div.intro-flexbox nav ul li {
+    list-style: none;
+    font-size: larger;
+    padding: 1em;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: #11324D;
+    padding: 0 .25rem;
+}
+
+a:hover {
+    text-decoration: overline;
+}
+
+/* ---------------------------------------- */
+
+
+/* Quote Part */
+section.grid-quote-part {
+    width: 30vw;
+    height: 50vh;
+    margin: 0 auto;
+    margin-bottom: 10em;
+
+    background-color: #E7E0C9;
+    padding: 0.5em;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr) 0.5fr;
+
+    /* Animation */
+    transform: rotate(-45deg);
+}
+
+section.grid-quote-part div {
+    width: 100%;
+    height: 100%;
+}
+
+/* figure */
+.grid-quote-part figure { 
+    grid-column: 2 / span 3;
+    grid-row: 3 / 4;
+
+    text-align: end;
+    /* font-family: 'Major Mono Display', monospace; */
+    font-family: 'Inconsolata', monospace;
+    background-color: #11324d5d;
+    padding: 0.5em;
+}
+
+/* bars */
+.grid-quote-part div.bar-1 {
+    min-width: 3em;
+    width: 100%;
+    height: 100%;
+    background-color: #6B7AA1;
+
+    grid-column: 1;
+    grid-row: 2 / span 5;
+}
+
+.grid-quote-part div.bar-2 {
+    width: 100%;
+    height: 0.5em;
+    background-color: #6B7AA1;
+
+    grid-column: 4;
+    grid-row: 1;
+}
+
+
+/* Quote-Part Animation */
+
+section.grid-quote-part {
+    animation: 3s ease-in-out 1s 3 alternate forwards quote-rotation;
+}
+
+/* section.grid-quote-part:hover {
+    transform: rotate(-45deg);
+    animation: 3s ease-in-out 1s 3 alternate forwards quote-rotation;
+} */
+
+@keyframes quote-rotation {
+    from {
+        transform: rotate(-45deg);
+    }
+
+    over {
+        transform: rotate(-30deg);
+    }
+    
+    and {
+        transform: rotate(-15deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
