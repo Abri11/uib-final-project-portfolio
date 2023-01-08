@@ -1,0 +1,99 @@
+
+/* --------------- MAIN ------------------- */
+/* ----------- About-Section -------------- */
+
+section.fully-viewport {
+    width: 100%;
+    height: 100vh;
+}
+
+
+section div#about-headline {
+    background-color: #E7E0C9;
+}
+
+section div#about-headline > h1 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 550;
+    margin-left: 3em;
+}
+
+/* about-grid-system */
+section#about-section div#about-grid-system {
+    margin: 0 auto;
+    margin-top: 2.5em;
+    width: 85%;
+    height: 85%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1f;
+    gap: 0.2em;
+
+    font-size: larger;
+    text-align: center;
+}
+
+/* portrait image */
+section#about-section div#img-portrait {
+    grid-column: 1;    
+
+    background-image: url(../assets/img/portfolio-portrait.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+div#about-grid-system ul li {
+    padding: 0.4em;
+    cursor: pointer;
+}
+
+div#about-grid-system > div#about-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#about-grid-system > div#about-list ul {
+    list-style: none;
+}
+
+/* skills übersicht */
+div#about-grid-system > div#about-list > ul > li#about-general {
+    grid-column: 2;
+    
+}
+
+div#about-grid-system > div#about-list > ul > li#about-hard-skills {
+    grid-column: 2;
+    
+}
+
+div#about-grid-system > div#about-list > ul > li#about-soft-skills {
+    grid-column: 2;
+    
+}
+
+div#about-grid-system > div#about-list > ul > li#about-design-skills {
+    grid-column: 2;
+
+}
+
+div#about-grid-system > div#about-list > ul > li#about-resume {
+    grid-column: 2;
+
+}
+
+div#about-grid-system > div#about-list > ul > li#about-resume > h4 > a:hover {
+    text-decoration: none;
+    background-color: #E7E0C9;
+
+}
+
+div#about-grid-system h4 {
+    font-weight: 300;
+}

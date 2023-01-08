@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sophie Abraham">
-    <meta name="description" content="this is my portfolio">
+    <meta name="description" content="This is my portfolio">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/soft-reset.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/projects.css">
@@ -23,10 +23,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/laptop-code-solid.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/assets/img/laptop-code-solid.svg" type="image/svg+xml">
 
 
-    <title>S&frasl; Abraham</title>
+    <title>S &frasl; Abraham</title>
 </head>
 
 <body>
@@ -36,8 +36,8 @@
         <div class="intro-flexbox">
 
             <div id="intro">
-                <h1>S&frasl;<strong>Abraham</strong></h1>
-                <h2>Web Development</h2>
+                <h1>S &frasl;<strong>Abraham</strong></h1>
+                <h2>Web development &#x5F; Industrial experience</h2>
             </div>
 
             <nav>
@@ -45,7 +45,6 @@
                     <li><a href="#about-section">About</a></li>
                     <li><a href="#projects-section">Projects</a></li>
                     <li><a href="#contact-section">Contact</a></li>
-                    <li><a href="file/Lebenslauf 2022-2.pdf" target="_blank" rel="noopener noreferrer">File</a></li>
                     <li><a href="#" title="Top!"><i class="fa-solid fa-angles-up"></i></a></li>
                 </ul>
             </nav>
@@ -56,13 +55,14 @@
         <section class="grid-quote-part">
             <figure>
                 <blockquote>
-                    And only in the process of fixing myself, did I know who I really was.
-                </blockquote>
-                <figcaption>&ndash;Sade Andria Zabala</figcaption>
+                    And only in the process of <br>
+                    fixing myself, <br>
+                    did I know who I really was.
+                </blockquote><br>
+                <figcaption>&ndash; Sade Andria Zabala</figcaption>
             </figure>
-            
+
             <div class="bar-1"></div><!-- farbiger Block -->
-           
             <div class="bar-2"></div><!-- farbiger Block -->
         </section>
 
@@ -70,159 +70,97 @@
 
     <!-------------- MAIN ------------------------------->
     <main>
-        <!-- About-Section -->
+        <!---------- About-Section ---------------------->
         <section id="about-section" class="fully-viewport">
-            <div class="first-part">
-                <h1>/ About</h1>
-                <h2>/ me</h2>
+            <div id="about-headline">
+                <h1>About</h1>
             </div>
 
             <!-- Grid-System - Lists of skills -->
             <div id="about-grid-system">
 
-                <div id="img-portrait"></div>
-                <div id="about-intro">
+                <div id="img-portrait" title="Photographer: Willy Abraham"></div>
+                <div id="about-list">
                     <ul>
-                        <li><strong>Hometown Leipzig</strong></li>
-                        <li>Web- and Software Developer</li>
-                        <li>Coffeemaker - Coffeelover</li>
-                        <li>Creator - Modifier</li>
-                    </ul>
-                </div>
-
-                <!-- hard-skills -->
-                <div id="about-hard-skills">
-                    <ul>
-                        <li>
-                            <h4 class="slash-marker">hard-skills</h4>
+                        <!-- general -->
+                        <li id="about-general">
+                            <h4>general</h4>
+                            <ul id="general-list" hidden>
+                                <li>Hometown Leipzig</li>
+                                <li>Web- & Software Developer</li>
+                                <li>Coffeemaker - Coffeelover</li>
+                                <li>Creator - Modifier</li>
+                            </ul>
                         </li>
-                        <li>HTML5</li>
-                        <li>CSS, SCSS</li>
-                        <li>Frameworks - Bootstrap, SIU</li>
-                        <li>JavaScript</li>
-                        <li>Slack, Trello</li>
-                    </ul>
-                </div>
 
-                <!-- soft-skills -->
-                <div id="about-soft-skills">
-                    <ul>
-                        <li>
-                            <h4 class="slash-marker">soft-skills</h4>
+                        <!-- hard-skills -->
+                        <li id="about-hard-skills">
+                            <h4>hard skills</h4>
+                            <ul id="hard-skills-list" hidden>
+                                <li>HTML5</li>
+                                <li>CSS, SCSS</li>
+                                <li>Bootstrap, React</li>
+                                <li>JavaScript</li>
+                                <li>Slack, Trello</li>
+                            </ul>
                         </li>
-                        <li>Communication</li>
-                        <li>Empathy</li>
-                        <li>Teamplayer</li>
-                        <li>Organizer</li>
-                    </ul>
-                </div>
 
-                <!-- design-skills -->
-                <div id="about-design-skills">
-                    <ul>
-                        <li>clear</li>
-                        <li>simple</li>
-                        <li>functional</li>
-                        <li>linear</li>
-                        <li>Design</li>
+                        <!-- soft-skills -->
+                        <li id="about-soft-skills">
+                            <h4>soft skills</h4>
+                            <ul id="soft-skills-list" hidden>
+                                <li>Empathy</li>
+                                <li>Communication</li>
+                                <li>Teamplayer</li>
+                                <li>Organizer</li>
+                            </ul>
+                        </li>
+
+                        <!-- design-skills -->
+                        <li id="about-design-skills">
+                            <h4>design</h4>
+                            <ul id="design-list" hidden>
+                                <li>clear</li>
+                                <li>simple</li>
+                                <li>functional</li>
+                                <li>linear</li>
+                            </ul>
+                        </li>
+
+                        <!-- resume -->
+                        <li id="about-resume">
+                            <h4><a href="assets/file/Lebenslauf 2022-2.pdf" target="_blank" rel="noopener noreferrer">resume</a></h4>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!------- Projects-Section ------------->
+        <!--------- Projects-Section -------------------------->
         <section id="projects-section" class="fully-viewport">
-            <div class="first-part">
-                <h1>/ Projects</h1>
+            <div id="projects-headline">
+                <h1>Projects</h1>
             </div>
 
             <!-- Grid-System - Projects-Galerie -->
             <div id="projects-grid-system">
-
-                <div id="magazin-project" class="background filter-effect"></div>
-                <div id="bar-row-two" class="bar-3"></div><!-- Akzentfarbe in Zeile -->
-                <div id="portfolio-project" class="background filter-effect"></div>
-                <div id="top-text-box" class="text-flexbox">
-                    <h4 class="angle-left"><a href="https://github.com/Hardcode-UIB/magazine-landing-page-Abri11"
-                            target="_blank">Magazin-Landing</a></h4>
-                    <p>Startpage - Html and CSS</p>
-                    <h4 id="angle-right">Free Portfolio Page</h4>
-                    <p>Html and Css</p>
-                </div>
-                <div id="design-project" class="background filter-effect"></div>
-                <div id="hardcode-project" class="background filter-effect"></div>
-                <div id="keyframing-mario-project" class="background filter-effect"></div>
-                <div id="left-text-box" class="text-flexbox">
-                    <h4><a href="https://github.com/Hardcode-UIB/grid-design-studio-Abri11" target="_blank"
-                            rel="noopener noreferrer">/ Design-Studio</a></h4>
-                    <p>Startpage - Html and CSS</p>
-                </div>
-                <div id="middle-text-box" class="text-flexbox">
-                    <h4><a href="https://github.com/Hardcode-UIB/hardcode-team-homepage" target="_blank"
-                            rel="noopener noreferrer">/ Hardcode Homepage</a></h4>
-                    <p>Team-Page - Html, CSS-Animation</p>
-                </div>
-                <div id="right-text-box" class="text-flexbox">
-                    <h4>/ Keyframing Mario Animation</h4>
-                    <p>Html and CSS-Animation</p>
-                </div>
-                <div id="bar-row-five" class="bar-3"></div>
-                <div id="generator-project" class="background filter-effect"></div>
-                <div id="github-icon">
-                    <a href="http://github.com/Hardcode-UIB" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-                <div id="navy-box" class="text-flexbox">
-                    <h4 class="angle-left">Number Generator Game</h4>
-                    <p>
-                        Html and CSS
-                    </p>
-                </div>
-
+                <h4>... in progress</h4>
             </div>
         </section>
 
-        <!------ Contact-Section ------------->
+        <!-------- Contact-Section ---------------------------->
         <section id="contact-section">
-            <div class="first-part">
-                <h1>/ Contact</h1>
+            <div id="contact-headline">
+                <h1>Contact</h1>
             </div>
 
             <!-- Contact-Flexbox with Infobox and Formbox -->
             <div id="contact-flexbox">
-                <div id="contact-info">
-                    <h2><a href="mailto:sophie.abraham@posteo.de">sophie.abraham@posteo.de</a></h2>
+                <h2><a href="mailto:sophie.abraham@posteo.de" title="Mail me!">sophie.abraham@posteo.de</a></h2>
 
-                    <h3>+49 176 12345678</h3>
-                    <h4>Call me or send a message on Signal.</h4>
-                </div>
+                <h3>+49 176 83311012 <br>
+                    Call me or send a message on Signal.
+                </h3>
 
-                <form id="contact-form">
-                    <h2>/ Inbox</h2>
-
-                    <fieldset id="name-fieldset">
-                        <label for="contact-name">Your name</label>
-                        <input type="text" id="contact-name">
-                    </fieldset>
-
-                    <fieldset id="email-fieldset">
-                        <label for="contact-email">Your email address</label>
-                        <input type="email" id="contact-email">
-                    </fieldset>
-
-                    <fieldset id="message-fieldset">
-                        <label for="contact-message">Your message</label>
-                        <textarea id="contact-message" cols="30" rows="15"></textarea>
-                    </fieldset>
-
-                    <fieldset id="agree-fieldset">
-                        <label for="contact-agree">I agree on receiving ads.</label>
-                        <input type="checkbox" id="contact-agree">
-                    </fieldset>
-
-                    <button type="button">send</button>
-                </form>
             </div>
         </section>
     </main>
@@ -230,11 +168,10 @@
     <!-- ------------------ FOOTER ------------------------------------- -->
     <footer>
         <ul>
-            <li><a href="#">Impressum</a></li>
-            <li><a href="http://github.com/Hardcode-UIB" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://github.com/Abri11" target="_blank"><i class="fa-brands fa-github"></i></a></li>
             <li>
                 <ul>
-                    <li>Design by</li>
+                    <li>Design</li>
                     <li>Sophie Abraham</li>
                     <li>Leipzig 2022</li>
                 </ul>
@@ -242,6 +179,7 @@
         </ul>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>

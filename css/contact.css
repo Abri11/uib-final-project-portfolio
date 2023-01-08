@@ -1,0 +1,49 @@
+
+/* ------------------- Contact-Section ------------------------ */
+
+section#contact-section {
+    width: 100%;
+    height: 95vh;
+}
+
+section div#contact-headline {
+    background-color: #6B7AA1;
+}
+
+section div#contact-headline > h1 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 550;
+    margin-left: 3em;
+}
+
+section#contact-section div#contact-flexbox {
+    width: 30vw;
+    height: 50vh;
+    margin: 0 auto;
+
+    background-color: #6B7AA1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+div#contact-flexbox > h2, h3, h4 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    background-color: #11324d5d;
+    margin-right: 0.5em;
+    padding: 0.1em;
+}
+
+div#contact-flexbox > h2 > a:hover {
+    text-decoration: none;
+    background-color: #C1CFC0;
+}
+
+
+div#contact-flexbox > h3 {
+    margin-top: 1em;
+}

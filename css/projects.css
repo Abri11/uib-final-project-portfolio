@@ -1,0 +1,39 @@
+
+/* --------------- Projects-Section ------------------------- */
+
+section div#projects-headline {
+    background-color: #C1CFC0;
+}
+
+section div#projects-headline > h1 {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 550;
+    margin-left: 3em;
+}
+
+/* Projects-Grid-System */
+section#projects-section div#projects-grid-system {
+    margin: 0 auto;
+    margin-top: 2.5em;
+    width: 85%;
+    height: 85%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1em;
+
+    font-size: larger;
+    text-align: center;
+
+    border: 2px solid #C1CFC0;
+}
+
+/* TODO hier erstmal Platzhalter */
+div#projects-grid-system > h4 {
+    grid-column: 1 / span 2;
+    margin-top: 5em;
+    font-family: 'Inconsolata', monospace;
+    background-color: white;
+}
